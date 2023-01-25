@@ -22,7 +22,14 @@ module.exports = {
       },
       backgroundImage : {
         'ioga' : "url('./src/assets/ioga.jpg')"
+      },
+      borderRadius : {
+        fancy : '60% 40% 24% 76% / 36% 33% 67% 64% '
+      },
+      fontFamily : {
+        main : 'Halvetica'
       }
+      
     },
   },
   plugins: [],
