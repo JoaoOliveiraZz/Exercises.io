@@ -18,6 +18,7 @@ module.exports = {
         blueLight : '#457B9D',
         blueSuperLight: '#A8DADC',
         whiteSolid  : '#F1FAEE',
+        test : '#e6ebe0',
         redSolid : '#E63946'
       },
       backgroundImage : {
@@ -28,6 +29,9 @@ module.exports = {
       },
       fontFamily : {
         main : 'Halvetica'
+      },
+      boxShadow : {
+        forms : 'box-shadow: 21px 21px 35px -25px rgba(0,0,0,0.75)'
       }
       
     },

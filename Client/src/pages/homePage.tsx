@@ -16,7 +16,7 @@ export function HomePage() {
           <h1 className='font-extrabold text-center text-darkBlue text-7xl'>
             Exercises<span className='text-redSolid'>.io</span>
           </h1>
-          <p className='text-center m-2 w-1/2'>Pratique exercícios, ganhe recompensas e mais saúde e disposição no dia a dia</p>
+          <p className='text-center m-2 w-1/2'>Pratique exercícios, ganhe recompensas, mais saúde e disposição no dia a dia</p>
           <button className="rounded-lg border-2 border-red-500 text-center bg-redSolid p-2 font-medium text-whiteSolid lowercase flex items-center  gap-2 justify-between hover:bg-whiteSolid hover:text-zinc-900 transition-all duration-700">
             <Link to = {'/login'} >Seja membro</Link>
             <Barbell
