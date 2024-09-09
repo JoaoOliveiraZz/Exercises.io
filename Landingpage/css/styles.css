@@ -1,0 +1,50 @@
+:root {
+    --text: #040316;
+    --background: #FEFBF6;
+    --accent: #E07936;
+}
+
+.cta-section{
+    height: 100vh;
+}
+
+.background-break{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: var(--accent);
+    border-bottom-left-radius: 160px;
+    width: 42%;
+    z-index: 0;
+}
+
+.cta-section header{
+    height: 60px;
+    width: 100%;
+}
+
+.cta-section header nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0px;
+}
+
+.cta-section header nav ul li{
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+
+.cta-section header nav ul li a{
+    
+}
+
+.cta-button{
+    background: var(--background);
+    color: var(--accent);
+    padding: 12px 20px;
+    border-radius: 12px;
+}
