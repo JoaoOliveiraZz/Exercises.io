@@ -1,11 +1,22 @@
 :root {
     --text: #040316;
     --background: #FEFBF6;
-    --accent: #E07936;
+    --primary: #f39f5f;
+    --accent: #FF5733;
 }
 
-.cta-section{
+.hero-section{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-section > div {
+    display: flex;
+    flex: 1;
+    /* align-items: center; */
+    gap: 20%;
 }
 
 .background-break{
@@ -13,38 +24,130 @@
     right: 0;
     top: 0;
     height: 100%;
-    background: var(--accent);
-    border-bottom-left-radius: 160px;
+    background: var(--primary);
+    border-bottom-left-radius: 80px;
     width: 42%;
     z-index: 0;
+    /* animation: background-left-to-right linear 1s; */
 }
 
-.cta-section header{
+.hero-section header{
     height: 60px;
     width: 100%;
 }
 
-.cta-section header nav{
+.hero-section header nav{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 0px;
+    padding: 16px 0px;
+}
+.hero-section header nav ul{
+    padding: 0;
 }
 
-.cta-section header nav ul li{
+.hero-section header nav ul li{
     list-style: none;
     display: flex;
     gap: 28px;
 }
 
-.cta-section header nav ul li a{
-    
+.hero-section header nav .hero-button{
+    font-size: 1rem;
 }
 
-.cta-button{
-    background: var(--background);
-    color: var(--accent);
+.hero-button{
+    background: var(--accent);
     padding: 12px 20px;
     border-radius: 12px;
 }
+
+.hero-section .hero-cta{
+    width: 474px;
+}
+
+.hero-section .hero-cta > *{
+    margin-bottom: 1rem;
+}
+
+.hero-section .hero-cta h1{
+    width: 296px;
+    font-size: 4.2rem;
+    line-height: 4.5rem;
+   
+}
+
+.title-highlight, .text-highlighted{
+    color: var(--accent);
+}
+
+.text-highlighted{
+    font-weight: bold;
+}
+
+.hero-section .hero-cta p{
+    margin-bottom: 24px;
+    font-size: 1.2rem;
+}
+
+.hero-section .hero-cta .hero-button{
+    background: var(--accent);
+    color: var(--background);
+}
+
+.hero-image{
+    width: 60%;
+    position: relative;
+    animation: image-ease-in ease-in-out 1.5s;
+}
+
+.hero-advantages {
+    display: flex;
+    gap: 12px;
+   
+}
+
+.hero-advantages .advantage-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid var(--primary);
+    border-radius: 8px;
+    padding: 40px 4px;
+    height: 80px;
+    width: 120px;
+    gap: 8px;
+}
+
+.hero-advantages .advantage-box i{
+    font-size: 20px;
+    color: var(--accent);
+}
+
+.hero-advantages span {
+    text-align: center;
+    font-weight: 500;
+    flex: 1;
+}
+
+
+@keyframes background-left-to-right {
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+@keyframes image-ease-in {
+    0%{
+        left: -5%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+

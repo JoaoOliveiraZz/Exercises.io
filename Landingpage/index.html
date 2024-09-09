@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercises.io</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <section class="cta-section">
+    <section class="hero-section">
       <header>
         <nav>
           <ul>
@@ -18,10 +19,40 @@
               <a href="#">Faq</a>
             </li>
           </ul>
-          <a href="#" class="cta-button">Comece agora</a>
+          <a href="#" class="hero-button">Comece agora</a>
         </nav>
       </header>
+      <div>
+        <div class="hero-cta">
+            <h1 class="highlighted">
+                Faça do seu <span class="title-highlight highlighted">corpo</span> a sua <span class="title-highlight highlighted">máquina!</span>
+            </h1>
+            <div class="hero-advantages">
+              <div class="advantage-box">
+                <i class="fa-solid fa-list-check"></i>
+                <span>Organize-se melhor</span>
+              </div>
+              <div class="advantage-box">
+                <i class="fa-solid fa-fire-flame-simple"></i>
+                <span>Mantenha a constância</span>
+              </div>
+              <div class="advantage-box">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span>Faça progresso</span>
+              </div>
+            </div>
+            <p>
+                Chegou a hora de <span class="text-highlighted">transformar</span> suas <span class="text-highlighted">metas</span> de saúde <span class="text-highlighted">em realidade!</span> Preparado para alavancar seus resultados? 
+            </p>
+            <a href="#" class="hero-button">Comece agora</a>
+        </div>
+        <img id="hero-image" src="./assets/images/undraw_fitness_tracker_3033.svg" alt="woman running" class="hero-image" onload="fetchSvg(this)">
+      </div>
       <div class="background-break"></div>
     </section>
+
+
+
+    <script src="./js/hero_image.js"></script>
   </body>
 </html>
